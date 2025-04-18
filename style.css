@@ -1,0 +1,49 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.display {
+    font-size: 3rem;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #333;
+}
+
+#laps {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.lap-item {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.lap-item:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.btn {
+    min-width: 100px;
+}
+
+@media (max-width: 576px) {
+    .display {
+        font-size: 2rem;
+    }
+    
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
